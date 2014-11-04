@@ -1,16 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®åŠ ç›Ÿåº—</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ÉÙÄêÓÎÖÇÄÜÐý·çÂÖ¼ÓÃËµê</title>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" type="text/css" href="./css/imgeffect.css" />
 <script src="./js/jquery.min.js"></script>
+<!-- begin add new style -->
+<style type="text/css">
+.focus {width:1000px; height:580px; margin:0 auto; overflow:hidden; position:relative;}
+.focus ul {height:760px; position:absolute;}
+.focus ul li {float:left; width:1000px; height:500px; overflow:visible; position:relative; background:#000;}
+.focus ul li div {position:absolute; overflow:hidden;}
+.focus .btnBg {position:absolute; width:1000px; height:20px; left:0; bottom:0; background:#000; display:none;}
+.focus .btn {position:absolute; width:580px; height:23px; padding:0px 10px 0px 10px; right:0; bottom:6px; text-align:right;}
+.focus .btn span {display:inline-block; _display:inline; _zoom:1; width:25px; height:24px; line-height:24px; text-align:center; _font-size:0; margin-left:5px; cursor:pointer; background:#fff;}
+.focus .btn span.on {background:#fff;}
+.focus .preNext {width:45px; height:100px; position:absolute; top:90px; background:url(img/sprite.png) no-repeat 0 0; cursor:pointer;}
+.focus .pre {left:0;}
+.focus .next {right:0; background-position:right top;}
+</style>
+<!-- end add new style -->
 
 <!-- start gallery Script -->
 	<script type="text/javascript" src="./js/jquery.easing.min.js"></script>	
 	<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="./js/sl.js"></script>
 				<script type="text/javascript">
 				$(function () {
 					
@@ -76,13 +92,18 @@
 				<script type="text/javascript" src="./js/move-top.js"></script>
 				<script type="text/javascript" src="./js/easing.js"></script>
 				<!----end gallery----------->
-				
 		   	<script type="text/javascript">
 				jQuery(document).ready(function($) {
 					$(".scroll").click(function(event){		
 						event.preventDefault();
 						$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 					});
+				});
+			</script>
+			
+			<script type="text/javascript">
+				$(document).ready(function(){
+	  				$.focus("#focus001");
 				});
 			</script>
 </head>
@@ -99,21 +120,19 @@
 					<div class="wrap">
 						<div class="header">
 							<!--------start-logo------>
-							
+							<!--
 							<div class="logo">
-								
 								<a href="#"><img src="./images/logo.png" alt="" /></a>
-								
 							</div>
-							
+							-->
 							<!--------end-logo--------->
 							<!----start-nav-------->	
 							<div class="nav">
 								<ul>
-								   <li class="active"><a href="#home" class="scroll">é¦–é¡µ</a></li>
-								   <li><a href="#portfolio" class="scroll">äº§å“æŽ¨è</a></li>
-								   <li><a href="#about" class="scroll">å…¬å¸ç®€ä»‹</a></li>
-								   <li><a href="#contact" class="scroll">è”ç³»æˆ‘ä»¬</a></li>
+								   <li><a href="#home" class="scroll">Ê×Ò³</a></li>
+								   <li><a href="#portfolio" class="scroll">²úÆ·ÍÆ¼ö</a></li>
+								   <li><a href="#about" class="scroll">¹«Ë¾¼ò½é</a></li>
+								   <li class="active"><a href="#contact" class="scroll">ÁªÏµÎÒÃÇ</a></li>
 								 <div class="clear"> </div>
 								 </ul>
 							</div>
@@ -124,9 +143,9 @@
 				</div>
 				<!------end-header------------>
 				
-				<h2><span>å°‘ å¹´ æ¸¸</span></h2>
-					<p>æ™ºèƒ½æ—‹é£Žè½®</p>
-					<a href="http://www.51sny.com" class="da-link">äº†è§£æ›´å¤š</a>
+				<h2><span>ÉÙ Äê ÓÎ</span></h2>
+					<p>ÖÇÄÜÐý·çÂÖ</p>
+					<a href="http://www.51sny.com" class="da-link">ÁË½â¸ü¶à</a>
 					<a href="#portfolio" class="scroll"><span class="da-img"> </span> </a>
 			</div>
 			<!---//End-da-slider----->
@@ -142,58 +161,58 @@
 	
 						<div id="small-dialog1" class="mfp-hide">
 							<div class="pop_up">
-								<h2>Q1åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>Q1ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/Q1.jpg" alt=""/>
-								<p class="para">å¤–è§‚å°ºå¯¸: 386*165*469mm</p>
+								<p class="para">Íâ¹Û³ß´ç: 386*165*469mm</p>
 							</div>
 						</div>
 						<div id="small-dialog2" class="mfp-hide">
 							<div class="pop_up">
-								<h2>Q2åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>Q2ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/Q2.jpg" alt=""/>
-								<p class="para">å¤–è§‚å°ºå¯¸: 386*165*469mm</p>
+								<p class="para">Íâ¹Û³ß´ç: 386*165*469mm</p>
 							</div>
 						</div>
 						<div id="small-dialog3" class="mfp-hide">
 							<div class="pop_up">
-								<h2>S3åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>S3ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/S3.jpg" alt=""/>
-								<p class="para">å¤–è§‚å°ºå¯¸: 386*165*469mm</p>
+								<p class="para">Íâ¹Û³ß´ç: 386*165*469mm</p>
 							</div>
 						</div>
 						<div id="small-dialog4" class="mfp-hide">
 							<div class="pop_up">
-								<h2>S3åž‹(ç¢³çº¤ç»´å¤–å£³)å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>S3ÐÍ(Ì¼ÏËÎ¬Íâ¿Ç)ÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/S3_1.jpg" alt=""/>
-								<p class="para">ç¢³çº¤ç»´å¤–å£³æ›´è½»æ›´è€ç”¨</p>
+								<p class="para">Ì¼ÏËÎ¬Íâ¿Ç¸üÇá¸üÄÍÓÃ</p>
 							</div>
 						</div>
 						<div id="small-dialog5" class="mfp-hide">
 							<div class="pop_up">
-								<h2>S4åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>S4ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/S4.jpg" alt=""/>
-								<p class="para">å¤–è§‚å°ºå¯¸: 386*165*469mm</p>
+								<p class="para">Íâ¹Û³ß´ç: 386*165*469mm</p>
 							</div>
 						</div>
 						<div id="small-dialog6" class="mfp-hide">
 							<div class="pop_up">
-								<h2>Q5åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>Q5ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/S5.jpg" alt=""/>
-								<p class="para">é‡‘å±žå¼æ ·å¤–è§‚æ›´æ˜¾ç¡¬æ°”</p>
+								<p class="para">½ðÊôÊ½ÑùÍâ¹Û¸üÏÔÓ²Æø</p>
 							</div>
 						</div>
 						<div id="small-dialog7" class="mfp-hide">
 							<div class="pop_up">
-								<h2>S5åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>S5ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/S5_1.jpg" alt=""/>
-								<p class="para">å¤–è§‚å°ºå¯¸: 386*165*469mm</p>
+								<p class="para">Íâ¹Û³ß´ç: 386*165*469mm</p>
 							</div>
 						</div>
 						<div id="small-dialog8" class="mfp-hide">
 							<div class="pop_up">
-								<h2>S6åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h2>
+								<h2>S6ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h2>
 								<img src="./images/S6.jpg" alt=""/>
-								<p class="para">å¤–è§‚å°ºå¯¸: 386*165*469mm</p>
+								<p class="para">Íâ¹Û³ß´ç: 386*165*469mm</p>
 							</div>
 						</div>
 
@@ -202,13 +221,13 @@
 			<div class="gallery">
 					<div class="clear"> </div>
 					<div class="container">
-						<h2>äº§å“å±•ç¤º</h2>
-						<p>æ›´å¤šäº§å“åŠé…å¥—è£…é¥°ã€å®žç”¨é…ä»¶ã€é…·ç‚«è½®æ»‘è¯·<a href="http://www.51sny.com/Product.asp">ç‚¹å‡»è¿™é‡Œ</a></p>
+						<h2>²úÆ·Õ¹Ê¾</h2>
+						<p>¸ü¶à²úÆ·¼°ÅäÌ××°ÊÎ¡¢ÊµÓÃÅä¼þ¡¢¿áìÅÂÖ»¬Çë<a href="http://www.51sny.com/Product.asp">µã»÷ÕâÀï</a></p>
 					<ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter="app card icon logo web">æ‰€æœ‰äº§å“</span></li>
-						<li><span class="filter" data-filter="app web">æœ€æ–°äº§å“</span></li>
-						<li><span class="filter" data-filter="icon web card">ç”¨æˆ·æœ€çˆ±</span></li>
-						<li><span class="filter" data-filter="web app icon card">ç‰¹è‰²äº§å“</span></li>
+						<li><span class="filter active" data-filter="app card icon logo web">ËùÓÐ²úÆ·</span></li>
+						<li><span class="filter" data-filter="app web">×îÐÂ²úÆ·</span></li>
+						<li><span class="filter" data-filter="icon web card">ÓÃ»§×î°®</span></li>
+						<li><span class="filter" data-filter="web app icon card">ÌØÉ«²úÆ·</span></li>
 						<div class="clear"> </div>
 					</ul>
 			<div id="portfoliolist">
@@ -221,8 +240,8 @@
 								<div class="ch-item ch-img-1">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>Q1åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=444'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>Q1ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=444'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -239,8 +258,8 @@
 								<div class="ch-item ch-img-2">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>Q2åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=445'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>Q2ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=445'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -257,8 +276,8 @@
 								<div class="ch-item ch-img-3">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>S3åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=447'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>S3ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=447'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -276,8 +295,8 @@
 								<div class="ch-item ch-img-4">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>S3åž‹(ç¢³çº¤ç»´å¤–å£³)å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=456'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>S3ÐÍ(Ì¼ÏËÎ¬Íâ¿Ç)ÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=456'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -295,8 +314,8 @@
 								<div class="ch-item ch-img-5">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>S4åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=471'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>S4ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=471'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -314,8 +333,8 @@
 								<div class="ch-item ch-img-6">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>Q5åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=472'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>Q5ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=472'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -333,8 +352,8 @@
 								<div class="ch-item ch-img-7">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>S5åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=457'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>S5ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=457'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -352,8 +371,8 @@
 								<div class="ch-item ch-img-8">
 									<div class="ch-info">
 										<img src="./images/zoom-white.png"/>
-										<h3>S6åž‹å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-										<p><a href='http://www.51sny.com/productshow.asp?ID=467'>è¯¦ç»†å‚æ•°ä»‹ç»</a></p>
+										<h3>S6ÐÍÉÙÄêÓÎÖÇÄÜÐý·çÂÖ</h3>
+										<p><a href='http://www.51sny.com/productshow.asp?ID=467'>ÏêÏ¸²ÎÊý½éÉÜ</a></p>
 									</div>
 								</div>
 							</li>
@@ -375,110 +394,54 @@
 <!-----start-about-------->
 
 <div class="about" id="about">
-	<div class="wrap">
-	<h2>å…¬å¸ç®€ä»‹</h2>
-	<p>å…¬å¸æ€§è´¨ã€æž„æˆã€å·²ç»ä¸»è¦æˆå‘˜ä»‹ç»ã€‚</p>
-		<div class="about-grids">
-			<div class="grid">
-				<div class="dc_zoom_css">
-				<span class="roll_css6">
-					<div class="social">
-						<ul>
-							<li><a class="sharefacebook" href="#"> </a> </li>
-							<li><a class="sharetwitter" href="#"> </a> </li>
-							<li><a class="sharetgoogle" href="#"> </a> </li>
-							<li><a class="sharedrible" href="#"> </a> </li>
-							<div class="clear"> </div>
-						</ul>
-					</div>
-				</span>
-				<img class="post-person" src="./images/img1.jpg">
-				</div>
-				<div class="desc">
-					<h3>äººç‰©å§“å</h3>
-					<p>äººç‰©èŒä½</p>
-					<p>äººç‰©çš„ä¸ªäººç®€ä»‹</p>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="dc_zoom_css">
-				<span class="roll_css6">
-					<div class="social">
-						<ul>
-							<li><a class="sharefacebook" href="#"> </a> </li>
-							<li><a class="sharetwitter" href="#"> </a> </li>
-							<li><a class="sharetgoogle" href="#"> </a> </li>
-							<li><a class="sharedrible" href="#"> </a> </li>
-							<div class="clear"> </div>
-						</ul>
-					</div>
-				</span>
-				<img class="post-person" src="./images/img2.jpg">
-				</div>
-				<div class="desc">
-					<h3>å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®</h3>
-					<p>ï¼ˆä¸­å›½ï¼‰è¿è¥æ€»éƒ¨</p>
-					<p>
-		å°‘å¹´æ¸¸æ™ºèƒ½æ—‹é£Žè½®ï¼ˆä¸­å›½ï¼‰è¿è¥æ€»éƒ¨æ˜¯ä¸€å®¶ä»¥é«˜æ–°æŠ€æœ¯ä¸ºä¸»å¯¼ï¼Œé›†æ™ºèƒ½åº”ç”¨æŠ€æœ¯ç ”å‘ã€äº§å“é”€å”®ã€å®¢æˆ·åŸ¹è®­äºŽä¸€ä½“çš„æŠ€æœ¯å¯†é›†åž‹ä¼ä¸šã€‚ç»è¥èŒƒå›´æ¶µç›–ï¼šä¼ä¸šç®¡ç†ã€æŠ€æœ¯å¼€å‘ã€æŠ€æœ¯è½¬è®©ã€æŠ€æœ¯æœåŠ¡ã€ç»æµŽä¿¡æ¯å’¨è¯¢ã€ç”µå­äº§å“ç­‰å¤šä¸ªé¢†åŸŸã€‚å…¬å¸æ˜¯ä»¥â€œç§¯æžåˆ›æ–°ã€ç»“æžœå¯¼å‘ã€å®¢æˆ·ä»·å€¼ã€å¼€æ”¾åˆ†äº«â€ä¸ºæ ¸å¿ƒä»·å€¼è§‚çš„ä¼ä¸šï¼Œæ³¨é‡ç§‘æŠ€äººæ‰çš„åŸ¹å…»ï¼ŒåŠªåŠ›æ‰“é€ ç®¡ç†ä¼˜ç§€ã€æŠ€æœ¯ç²¾è‰¯çš„å›¢é˜Ÿã€‚å¤šå¹´æ¥ï¼Œç§‰æ‰¿â€œèŠ‚èƒ½ã€çŽ¯ä¿ã€ç»¿è‰²ã€é«˜ç§‘æŠ€â€çš„ä¼ä¸šå‘å±•ç²¾ç¥žï¼Œä¸æ–­ä¸ºå®¢æˆ·æä¾›é«˜å“è´¨çš„äº§å“ã€‚å…¬å¸åšæŒä»¥å¸‚åœºä¸ºå¯¼å‘ï¼Œç»æµŽæ•ˆç›Šä¸ºä¸­å¿ƒã€æŠ€æœ¯è¿›æ­¥ä¸ºæ‰‹æ®µï¼Œä¸€è´¯æ³¨é‡å¯¹é«˜æ–°æŠ€æœ¯çš„å¸æ”¶å’ŒæŽ¨å¹¿ã€‚æˆ‘ä»¬å°†ç»§ç»­å‡­å€Ÿä¼˜ç§€çš„ç ”å‘å›¢é˜Ÿã€ä¸°å¯Œçš„è¡Œä¸šç»éªŒç§¯ç´¯ï¼Œä¸ºå…¨å›½çš„å®¢æˆ·ã€åˆä½œå•†åˆ›é€ æ›´å¤§çš„ä»·å€¼ï¼</p>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="dc_zoom_css">
-				<span class="roll_css6">
-					<div class="social">
-						<ul>
-							<li><a class="sharefacebook" href="#"> </a> </li>
-							<li><a class="sharetwitter" href="#"> </a> </li>
-							<li><a class="sharetgoogle" href="#"> </a> </li>
-							<li><a class="sharedrible" href="#"> </a> </li>
-							<div class="clear"> </div>
-						</ul>
-					</div>
-				</span>
-				<img class="post-person" src="./images/img3.jpg">
-				</div>
-				<div class="desc">
-					<h3>äººç‰©å§“å</h3>
-					<p>äººç‰©èŒä½</p>
-					<p>äººç‰©çš„ä¸ªäººç®€ä»‹</p>
-				</div>
-			</div>
-			<div class="clear"> </div>
-		</div>
+	<div class="focus" id="focus001">
+    		<ul>
+        	<li><a href="#" target="_blank"><img src="./images/ad1.jpg" alt="1" /></a></li>
+        	<li><a href="#" target="_blank"><img src="./images/ad2.jpg" alt="2" /></a></li>
+        	<li><a href="#" target="_blank"><img src="./images/ad3.jpg" alt="3" /></a></li>
+		<li><a href="#" target="_blank"><img src="./images/ad4.jpg" alt="4" /></a></li>
+        	<li><a href="#" target="_blank"><img src="./images/ad5.jpg" alt="5" /></a></li>
+        	<li><a href="#" target="_blank"><img src="./images/ad6.jpg" alt="6" /></a></li>
+        	<li><a href="#" target="_blank"><img src="./images/ad7.jpg" alt="7" /></a></li>
+    		</ul>
 	</div>
+<!--
+ÉÙÄêÓÎÖÇÄÜÐý·çÂÖ£¨ÖÐ¹ú£©ÔËÓª×Ü²¿ÊÇÒ»¼ÒÒÔ¸ßÐÂ¼¼ÊõÎªÖ÷µ¼£¬¼¯ÖÇÄÜÓ¦ÓÃ¼¼ÊõÑÐ·¢¡¢²úÆ·ÏúÊÛ¡¢¿Í»§ÅàÑµÓÚÒ»ÌåµÄ¼¼ÊõÃÜ¼¯ÐÍÆóÒµ¡£¾­Óª·¶Î§º­¸Ç£ºÆóÒµ¹ÜÀí¡¢¼¼Êõ¿ª·¢¡¢¼¼Êõ×ªÈÃ¡¢¼¼Êõ·þÎñ¡¢¾­¼ÃÐÅÏ¢×ÉÑ¯¡¢µç×Ó²úÆ·µÈ¶à¸öÁìÓò¡£¹«Ë¾ÊÇÒÔ¡°»ý¼«´´ÐÂ¡¢½á¹ûµ¼Ïò¡¢¿Í»§¼ÛÖµ¡¢¿ª·Å·ÖÏí¡±ÎªºËÐÄ¼ÛÖµ¹ÛµÄÆóÒµ£¬×¢ÖØ¿Æ¼¼ÈË²ÅµÄÅàÑø£¬Å¬Á¦´òÔì¹ÜÀíÓÅÐã¡¢¼¼Êõ¾«Á¼µÄÍÅ¶Ó¡£¶àÄêÀ´£¬±ü³Ð¡°½ÚÄÜ¡¢»·±£¡¢ÂÌÉ«¡¢¸ß¿Æ¼¼¡±µÄÆóÒµ·¢Õ¹¾«Éñ£¬²»¶ÏÎª¿Í»§Ìá¹©¸ßÆ·ÖÊµÄ²úÆ·¡£¹«Ë¾¼á³ÖÒÔÊÐ³¡Îªµ¼Ïò£¬¾­¼ÃÐ§ÒæÎªÖÐÐÄ¡¢¼¼Êõ½ø²½ÎªÊÖ¶Î£¬Ò»¹á×¢ÖØ¶Ô¸ßÐÂ¼¼ÊõµÄÎüÊÕºÍÍÆ¹ã¡£ÎÒÃÇ½«¼ÌÐøÆ¾½èÓÅÐãµÄÑÐ·¢ÍÅ¶Ó¡¢·á¸»µÄÐÐÒµ¾­Ñé»ýÀÛ£¬ÎªÈ«¹úµÄ¿Í»§¡¢ºÏ×÷ÉÌ´´Ôì¸ü´óµÄ¼ÛÖµ£¡
+-->
 </div>
+
 <!---------end-about------------->
 <div class="contact" id="contact">
 	<div class="wrap">
-		<h2>è”ç³»æˆ‘ä»¬</h2>
-		<h4>è¯·ç•™ä¸‹æ‚¨çš„å®è´µæ„è§ï¼Œæˆ‘ä»¬å°†ç«­è¯šä¸ºæ‚¨æœåŠ¡ã€‚</h4>
+		<h2>ÁªÏµÎÒÃÇ</h2>
+		<h4>ÇëÁôÏÂÄúµÄ±¦¹óÒâ¼û£¬ÎÒÃÇ½«½ß³ÏÎªÄú·þÎñ¡£</h4>
 		<div class="section group">
 			  <div class="col span_2_of_3">
 				  <div class="contact-form">
 				  	  <form method="post" action="#">
 					    	
-					    		<input type="text" class="textbox" value="ä½ çš„åå­—" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ä½ çš„åå­—';}">
-						    	<input type="text" class="textbox" value="ä½ çš„é‚®ç®±" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ä½ çš„é‚®ç®±';}">
+					    		<input type="text" class="textbox" value="ÄãµÄÃû×Ö" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ÄãµÄÃû×Ö';}">
+						    	<input type="text" class="textbox" value="ÄãµÄÓÊÏä" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ÄãµÄÓÊÏä';}">
 						    	<div class="clear"> </div>
 						   
 						    <div>
-						    	<textarea value="ä½ çš„ç•™è¨€..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ä½ çš„ç•™è¨€';}">ä½ çš„ç•™è¨€...</textarea>
+						    	<textarea value="ÄãµÄÁôÑÔ..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ÄãµÄÁôÑÔ';}">ÄãµÄÁôÑÔ...</textarea>
 						    </div>
-						  <span><input type="submit" class="" value="æäº¤"></span>
+						  <span><input type="submit" class="" value="Ìá½»"></span>
 						  <div class="clear"></div>
 					    </form>
 				  </div>
   				</div>
 				<div class="col span_1_of_3">
 					<div class="company_address">
-				     	<h5>è”ç³»æ–¹å¼</h5>
+				     	<h5>ÁªÏµ·½Ê½</h5>
 						<ul class="list3">
 							<li>
 								<img src="./images/location.png" alt=""/>
 								<div class="extra-wrap">
-								  <p>ä¸­åŽäººæ°‘å…±å’Œå›½</p>
-								  <p>æ±Ÿè‹çœå—äº¬å¸‚</p>
-								  <p>è¯¦ç»†åœ°å€ï¼Œé‚®ç¼–: 211501</p>
+								  <p>ÖÐ»ªÈËÃñ¹²ºÍ¹ú</p>
+								  <p>½­ËÕÊ¡ÄÏ¾©ÊÐÆÖ¿ÚÇøÃ÷·¢±õ½­ÐÂ³Ç157-163¶°2106ÊÒ</p>
+								  <p>ÓÊ±à: 211501</p>
 								</div>
 								<div class="clear"> </div>
 							</li>
@@ -486,22 +449,22 @@
 							<li>
 								<img src="./images/phone.png" alt=""/>
 								<div class="extra-wrap">
-									<p>å›ºå®šç”µè¯: 025-58177286</p>
-									<p>æ‰‹æœº: 15850753202</p>
+									<p>¹Ì¶¨µç»°: 025-58177286</p>
+									<p>ÊÖ»ú: 15850753202</p>
 								</div>
 								<div class="clear"> </div>
 							</li>
 							<li>
 								<img src="./images/fax2.png" alt=""/>
 								<div class="extra-wrap">
-									<p>ä¼ çœŸ: 025-57686110</p>
+									<p>´«Õæ: 025-58177286</p>
 								</div>
 								<div class="clear"> </div>
 							</li>
 							<li>
 								<img src="./images/mail.png" alt=""/>
 								<div class="extra-wrap">
-									<p>é‚®ç®±: info@appstore.com</a></p>
+									<p>ÓÊÏä: info@appstore.com</a></p>
 								</div>
 								<div class="clear"> </div>
 							</li>
@@ -515,7 +478,7 @@
      <div class="footer-bottom">
      	<div class="wrap">
         <div class="copy">
-		    &copy; 2012-2014 ä¸Šæµ·ç”³ç‡Šå“ç‰Œç®¡ç†æœ‰é™å…¬å¸ ç‰ˆæƒæ‰€æœ‰&nbsp;|&nbsp; å¤‡æ¡ˆå·: æ²ªICPå¤‡13023935å·&nbsp;|&nbsp;ç½‘å€: <a href="http://www.shaonianyou.net">www.shaonianyou.net</a> &nbsp;|&nbsp;ç”µè¯: 021-31007066
+		    &copy; 2012-2014 ÉÏº£ÉêŸöÆ·ÅÆ¹ÜÀíÓÐÏÞ¹«Ë¾ °æÈ¨ËùÓÐ&nbsp;|&nbsp; ±¸°¸ºÅ: »¦ICP±¸13023935ºÅ&nbsp;|&nbsp;ÍøÖ·: <a href="http://www.51sny.com">www.51sny.com</a> &nbsp;|&nbsp;µç»°: 021-31007066
 		<script type="text/javascript">
 							$(document).ready(function() {
 								
